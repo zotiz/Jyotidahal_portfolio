@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taprom&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 :root{
+  
   /*--bg-black-900:#f2f2fc;*/
   --bg-black-900:#2DCDDF;
   /*--bg-black-100:#fdf9ff;*/
@@ -286,12 +289,13 @@ ul {
   flex: 0 0 60%;
   max-width: 60%;
 }
-h3.hello{
-  font-size:28px;
-  margin:15px 0;
+
+span.cursive {
+  font-family: 'Fasthand', cursive;
+  font-size: 28px;
 }
-h3.hello span{
-  font-size: 30px;
+h3 span.hello{
+  font-size: 40px;
   font-weight: 700;
   color:var(--skin-color);
 }
@@ -302,7 +306,7 @@ h3 .last-2{
   }
 h3.myProfession{
   font-size:30px;
-  margin:15px 0;
+  margin:0 0 15px 0;
 }
 h3 .typing{
   color:var(--skin-color);
@@ -604,10 +608,14 @@ h3 .typing{
 }
 .portfolio .portfolioItemInner{
   border-radius: 10px;
-  border:6px solid var(--bg-black-100);
+  border:2px solid var(--bg-black-100);
   overflow: hidden;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 14px 28px, rgba(0, 0, 0, 0.30) 0px 10px 10px;
+
 }
+
+
 .portfolio .portfolioItemInner .portfolioImg img{
   width:100%;
   display: block;
@@ -782,4 +790,33 @@ h3 .typing{
   }
  
 }
+
+
+.content-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position:absolute;
+ top:0;
+ height:100%;
+ width: 100%;
+}
+.portfolioImg{
+  position: relative;
+ 
+}
+.content-div:hover{
+  background-color: #4842f2;
+  opacity: 0.9;
+}
+
+.btn-div{
+  margin-top: 20px;
+}
+
+
+
+
 
